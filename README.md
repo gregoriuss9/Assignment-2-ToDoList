@@ -16,13 +16,14 @@ npm install vue@3.4.19
 ```
 
 ## 1. Home `TodoList` page
-<p align="center">
-  <img src="/screenshot/Home.png />
+<!-- <p align="center">
+  <img src="/screenshot/Home.png /> -->
+
+![alt text](/screenshot/Home.png)
 
 ## 2. Add *to do list items* to the App
-<p align="center">
-  <img src="/screenshot/Add.png />
+![alt text](/screenshot/Add.png)
+
 
 ## 3. Add *check list items* to change list status 
-<p align="center">
-  <img src="/screenshot/changeStatus.png />
+![alt text](/screenshot/changeStatus.png)
