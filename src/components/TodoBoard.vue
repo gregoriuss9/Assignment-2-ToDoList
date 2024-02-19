@@ -58,7 +58,7 @@ export default {
                         <div class="card-pb-2">
                             <div class="card-body">
                                 <form @submit.prevent="addTodo">
-                                    <div class="row bg-white p-2">
+                                    <div class="row bg-white p-3 border rounded-4">
                                         <div class="col">
                                             <input required type="text"
                                                 class="form-control form-control-lg border border-white" id="add-todo"

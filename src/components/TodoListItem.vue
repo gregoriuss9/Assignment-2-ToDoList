@@ -32,7 +32,7 @@ export default {
         <ul class="list-group list-group-horizontal rounded-0 bg-transparent m-2 p-2">
             <li class="list-group-item d-flex align-items-center ps-0 pe-0 py-1 rouded-0 border-0 bg-transparent ">
                 <div class="form-check">
-                    <input @click="changeStatusTodo" type="checkbox" class="form-check-input me-0" value=""
+                    <input @click="changeStatusTodo" type="checkbox" class="form-check-input me-0" v-model="todo.completed"
                         style="height: 20px; width: 20px;" />
                 </div>
             </li>
@@ -48,7 +48,7 @@ export default {
 
             <li class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent ">
                 <span class="badge text bg-success p-3 ms-auto d-flex justify-content-between"
-                    style="width: 50%;"><font-awesome-icon icon="fa-regular fa-clock" />
+                    style="width: 45%;"><font-awesome-icon icon="fa-regular fa-clock" size="2x" />
                     {{ modifiedDate(todo.date) }}
                 </span>
             </li>
