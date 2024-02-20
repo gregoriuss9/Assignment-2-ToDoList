@@ -82,7 +82,7 @@ export default {
 
                         <!-- LIST TODO -->
                         <div id="list-todo">
-                            <TodoListItem v-for="(todo, index) in todoList" :key="index" :todo="todo" :index="index"
+                            <TodoListItem v-for=" (todo, index) in todoList" :key="index" :todo="todo" :index="index"
                                 @delete-todo="removeTodo(index)" @change-status-todo="onChangeStatusTodo(index)"
                                 :date="date" />
                         </div>

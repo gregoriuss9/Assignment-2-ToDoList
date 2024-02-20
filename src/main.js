@@ -2,7 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faClock } from '@fortawesome/free-regular-svg-icons'
+import { faClock, faUser } from '@fortawesome/free-regular-svg-icons'
+
 
 library.add(faClock)
 

@@ -1,5 +1,10 @@
 <script >
 export default {
+    data() {
+        return {
+            dateNow: new Date()
+        }
+    },
     props: {
         todo: Object,
         index: Number,
@@ -47,14 +52,21 @@ export default {
             </li>
 
             <li class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent ">
-                <span class="badge text bg-success p-3 ms-auto d-flex justify-content-between"
-                    style="width: 45%;"><font-awesome-icon icon="fa-regular fa-clock" size="2x" />
-                    {{ modifiedDate(todo.date) }}
+                <span class="border rounded-3 text-light bg-success p-3 ms-auto d-flex justify-content-between"
+                    style="width: 40%;">
+                    <font-awesome-icon icon="fa-regular fa-clock" size="1x" />
+                    <p class="fw-bold  mb-0">
+                        {{ modifiedDate(todo.date) }}
+                    </p>
+                </span>
+                <span class="border rounded-3 border-info p-3 ms-auto d-flex justify-content-between"
+                    style="width: 40%;"><font-awesome-icon icon="fa-regular fa-clock" size="1x" />
+                    {{ modifiedDate(dateNow) }}
                 </span>
             </li>
 
-            <li class="list-group-item px-3 py-1 d-flex align-items-center border-0 bg-transparent ">
-                <button @click="deleteTodo" type="button" class="p-2 btn btn-danger">Delete</button>
+            <li class="list-group-item px-3 d-flex align-items-center border-0 bg-transparent ">
+                <button @click="deleteTodo" type="button" class="p-2 btn btn-danger h-100 w">Delete</button>
             </li>
         </ul>
     </form>
